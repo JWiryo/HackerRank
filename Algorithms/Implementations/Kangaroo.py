@@ -4,7 +4,7 @@ import sys
 
 def kangaroo(x1, v1, x2, v2):
     # Complete this function
-    if (x2 > x1 and v2 > v1) or (x1 > x2 and v1 > v2):
+    if (x2 > x1 and v2 > v1) or (x1 > x2 and v1 > v2) or (v1 == v2):
         return 'NO';
     else:
         if(abs(x2 - x1) % abs(v2 - v1) == 0):
