@@ -16,7 +16,7 @@ for scoring in scoreList:
         secondLowest = scoring[1]
 
 for list in scoreList:
-    if list[1] is secondLowest:
+    if list[1] == secondLowest:
         secondLowestNameList.append(list[0])
 
 for name in sorted(secondLowestNameList):
