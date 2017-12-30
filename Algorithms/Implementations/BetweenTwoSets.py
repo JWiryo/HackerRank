@@ -2,23 +2,15 @@
 
 import sys
 
+
 def getTotalX(a, b):
     count = 0
-    check = False
-    xList = []
-    for i in a:
-        for j in a:
-            x = i*j
-            if x not in xList:
-                xList.append(x)
-    for x in xList:
-        for i in a:
-            for j in b:
-                if x % i == 0 and j % x == 0:
-                    check = True
-        if check:
+
+    for x in xrange(max(a), min(b) + 1):
+        if all(x % i == 0 for i in a) and all(j % x == 0 for j in b):
             count += 1
     return count
+
 
 if __name__ == "__main__":
     n, m = raw_input().strip().split(' ')
