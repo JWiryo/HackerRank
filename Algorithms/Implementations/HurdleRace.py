@@ -3,7 +3,7 @@
 import sys
 
 def hurdleRace(k, height):
-    # Complete this function
+    return max(max(height)-k,0)
 
 if __name__ == "__main__":
     n, k = raw_input().strip().split(' ')
