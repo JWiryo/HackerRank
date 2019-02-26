@@ -16,7 +16,7 @@ def countSwaps(a):
                 a[j], a[j+1] = a[j+1], a[j]
                 sortCounter += 1
 
-    print("Array is sorted in %s swaps." % (sortCounter))
+    print("Arrays is sorted in %s swaps." % (sortCounter))
     print("First Element: %s" % (a[0]))
     print("Last Element: %s" % (a[-1]))
 
